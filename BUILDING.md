@@ -6,8 +6,8 @@
 ## Instructions
 - Open Godot
 - Click "Scan"
-- Select the OpenCodeReader folder
-- Select OpenCodeReader in the project list
+- Select the Oscilloscope folder
+- Select ScopeView in the project list
 - Click "Project", then "Export"
 - Install export templates if needed
 - Click "Export All", then "Release"
