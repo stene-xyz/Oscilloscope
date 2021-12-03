@@ -11,8 +11,10 @@ need:
 - 1 probe (to probe measurement points)
 
 The schematic is available in `Oscilloscope.ino`.
+You'll need to build ScopeView (the companion software) using a copy of Godot (the C# version), or 
+write your own viewing software. This is quite simple, as the scope just outputs 
+the voltage value as strings over serial.
 
 ## TODO
 - Add some sort of display, possibly with a touchscreen
 - Port to the RP2040
-- Write software for the connected computer 

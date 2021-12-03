@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MainWindow.cs" type="Script" id=1]
+[ext_resource path="res://DefaultFont.tres" type="DynamicFont" id=2]
+
+[node name="MainWindow" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SerialPortSelector" type="OptionButton" parent="."]
+margin_left = 38.0
+margin_top = 5.0
+margin_right = 190.0
+margin_bottom = 25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SerialPortSelector"]
+margin_left = -33.0
+margin_top = 4.0
+margin_right = -5.0
+margin_bottom = 18.0
+text = "Port"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConnectButton" type="Button" parent="."]
+margin_left = 200.0
+margin_top = 5.0
+margin_right = 264.0
+margin_bottom = 25.0
+text = "Connect"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VoltageLabel" type="Label" parent="."]
+margin_top = 30.0
+margin_right = 1024.0
+margin_bottom = 96.0
+custom_fonts/font = ExtResource( 2 )
+text = "0.00V"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 27.0
+margin_top = 100.0
+margin_right = 1024.0
+margin_bottom = 600.0
+scroll_vertical_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="Control" parent="ScrollContainer"]
+
+[node name="Line2D" type="Line2D" parent="ScrollContainer/Container"]
+position = Vector2( 0, 499 )
+width = 2.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 100.0
+margin_right = 27.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="ColorRect"]
+margin_right = 27.0
+margin_bottom = 14.0
+text = "50V"
+
+[node name="Label2" type="Label" parent="ColorRect"]
+margin_left = 1.0
+margin_top = 485.0
+margin_right = 28.0
+margin_bottom = 499.0
+text = "0V"
